@@ -35,7 +35,9 @@ activation1 = Activation_ReLU()
 
 layer1.forward(X)
 
-print(layer1.output)
+# print(layer1.output)
+activation1.forward(layer1.output)  # This will set all the-ve values to 0
+print(activation1.output)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # NNFS
